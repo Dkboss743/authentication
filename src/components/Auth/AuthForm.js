@@ -21,10 +21,10 @@ const AuthForm = () => {
     let url;
     if (isLogin) {
       url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAJfge8zhc48lTLYCL4Qz7JB1_aVNclM6s";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=[API KEY]";
     } else {
       url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAJfge8zhc48lTLYCL4Qz7JB1_aVNclM6s";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API KEY]";
     }
     fetch(url, {
       method: "POST",
